@@ -385,12 +385,11 @@ footer nav {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    font-size: 0.65rem;
-    height: 48vh;
+    /* height: 48vh; */
   }
   .title h1 {
     font-size: 5rem;
-    padding: 5%;
+    padding: 2%;
   }
 
   .links {
