@@ -130,7 +130,7 @@ table {
 
 * {
   box-sizing: border-box;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   color: rgb(225, 239, 230);
 }
 
@@ -342,7 +342,10 @@ footer nav {
   /* font-size: 40px; */
   margin-left: 2%;
 }
-
+.mailingtext div {
+  display: flex;
+  flex-wrap: wrap;
+}
 .linksFooter {
   width: 63.5%;
   display: flex;
@@ -378,7 +381,23 @@ footer nav {
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
+  .top-header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.65rem;
+    height: 48vh;
+  }
+  .title h1 {
+    font-size: 5rem;
+    padding: 5%;
+  }
 
+  .links {
+    display: flex;
+    flex-flow: column;
+    padding: 2%;
+  }
   /* gallery section */
   .gallery {
     height: auto;
@@ -423,9 +442,71 @@ footer nav {
   }
 
   /* footer section */
+  * {
+    border: 1px solid grey;
+  }
   footer {
     height: auto;
-    padding-top: 2.5vh;
+    padding-top: 2vh;
     font-size: 2rem;
+  }
+  footer nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mailingtext {
+    width: 100%;
+    /* font-size: 40px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2%;
+    margin: 0%;
+  }
+
+  .mailingtext div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 3%;
+  }
+
+  .linksFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .join {
+    text-align: center;
+    font-size: 27px;
+  }
+
+  .email {
+    width: 100%;
+    font-size: 22px;
+    height: 32px;
+  }
+
+  .sign {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    height: 32px;
+  }
+  .copyright {
+    font-size: 16px;
+    width: 100%;
+    background-color: rgb(0, 4, 17);
+  }
+  .copyright p {
+    margin-left: 12.5%;
+    padding: 0%;
+    text-align: center;
+    width: 75%;
   }
 }
